@@ -142,17 +142,17 @@ export default function CurrencyInputPanel({
   cornerRadiusBottomNone,
   cornerRadiusTopNone
 }: CurrencyInputPanelProps) {
+  console.log('running');
   const { t } = useTranslation()
   const { account } = useActiveWeb3React()
   const theme = useTheme()
 
   const { allowance, approve, saave } = useSaave()
 
-  const sushiBalanceBigInt = useTokenBalance('0x6b3595068778dd592e39a122f4f5a5cf09c90fe2')
+  const sushiBalanceBigInt = useTokenBalance('0x6536da895447F91959ba9Abf0abacB1f69dF8066')
+
   const sushiBalance = formatFromBalance(sushiBalanceBigInt?.value, sushiBalanceBigInt?.decimals)
   const decimals = sushiBalanceBigInt?.decimals
-
-  console.log('sushiBalance:', sushiBalance, sushiBalanceBigInt, decimals)
 
   // handle approval
   const [requestedApproval, setRequestedApproval] = useState(false)

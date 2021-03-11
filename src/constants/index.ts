@@ -47,7 +47,7 @@ export const SUSHI: ChainTokenMap = {
     'SUSHI',
     'SushiToken'
   ),
-  [ChainId.GÖRLI]: new Token(ChainId.GÖRLI, '0x0769fd68dFb93167989C6f7254cd0D766Fb2841F', 18, 'SUSHI', 'SushiToken'),
+  [ChainId.GÖRLI]: new Token(ChainId.GÖRLI, '0x6536da895447F91959ba9Abf0abacB1f69dF8066', 18, 'SUSHI', 'SushiToken'),
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0x0769fd68dFb93167989C6f7254cd0D766Fb2841F', 18, 'SUSHI', 'SushiToken'),
   [ChainId.FANTOM]: new Token(ChainId.KOVAN, '0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC', 18, 'SUSHI', 'SushiToken')
 }

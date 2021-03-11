@@ -75,11 +75,13 @@ export function useFactoryContract(): Contract | null {
 
 export function useRouterContract(): Contract | null {
   const { chainId } = useActiveWeb3React()
+  chainId && console.log(ROUTER_ADDRESS[chainId], chainId);
   return useContract(chainId && ROUTER_ADDRESS[chainId], ROUTER_ABI, false)
 }
 
 export function useSushiBarContract(withSignerIfPossible?: boolean): Contract | null {
-  const { chainId } = useActiveWeb3React()
+  const { chainId } = useActiveWeb3React();
+  chainId && console.log('Bar address', BAR_ADDRESS[chainId]);
   return useContract(chainId && BAR_ADDRESS[chainId], BAR_ABI, withSignerIfPossible)
 }
 
